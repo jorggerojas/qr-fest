@@ -67,6 +67,7 @@ const Create: NextPage = () => {
   })
   return (
     <div>
+      CREATE
       <Header />
       <form onSubmit={formik.handleSubmit}>
         <label htmlFor="email">Email</label>
