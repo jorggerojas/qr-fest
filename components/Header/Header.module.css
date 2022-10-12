@@ -1,0 +1,13 @@
+.root{
+  width: 100%;
+  display: flex;
+}
+
+.root > p {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.root > p:hover {
+  text-decoration: underline;
+}

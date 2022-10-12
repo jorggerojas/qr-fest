@@ -1,0 +1,24 @@
+.root{
+  width: 100%;
+  color: #fff;
+}
+
+.secondary{
+  background-color: var(--secondary-btn);
+  border-color: var(--secondary-btn);
+}
+
+.secondary:hover{
+  background-color: var(--secondary-btn-hover);
+  border-color: var(--secondary-btn-hover);
+}
+
+.action{
+  background-color: var(--action-btn);
+  border-color: var(--action-btn);
+}
+
+.action:hover{
+  background-color: var(--action-btn-hover);
+  border-color: var(--action-btn-hover);
+}
