@@ -11,7 +11,6 @@ const Button = ({
   children,
   variant = 'primary',
   type = 'button',
-  className,
   ...props
 }: ButtonProps) => {
   const rootClassName = cn(s.root, {
@@ -19,7 +18,7 @@ const Button = ({
     [s.action]: variant === 'action',
   })
   return (
-    <button className={rootClassName} {...props}>
+    <button type={type} className={rootClassName} {...props}>
       {children}
     </button>
   )

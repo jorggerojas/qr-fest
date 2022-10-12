@@ -35,11 +35,12 @@ const createQRScheme = yup.object({
       message: 'Sólo números',
     })
     .required('Campo equerido')
-    .test(
-      (value: any) =>
-        value &&
-        value.match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/)
-    ),
+    .test('phone', 'Número de teléfono no válido', (value) => {
+      if (value) {
+        return value.length === 10 && !isNaN(Number(value))
+      }
+      return false
+    }),
   willSleepThere: yup.boolean().default(false),
   willBringInvitees: yup.boolean().default(false),
   inviteesNumber: yup.number().default(0),
